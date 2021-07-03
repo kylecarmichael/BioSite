@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Kyle Carmichael</title>
+    
+    <!-- Main Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+		<!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar-spy" data-bs-offset="100">
+
+	<!-- Navbar -->
+	<div class="nav-block"></div>
+
+	<nav class="navbar navbar-expand-sm navbar-dark fixed-top ps-1 pe-1 ps-md-3 pe-md-3 ps-lg-5 pe-lg-5 one-edge-shadow" id="navbar-spy">
+  <div class="container-fluid">
+		<div class="brand-transition">
+			<a class="navbar-brand" href="#hero-section">
+				<i class="bi-house-fill"></i>
+			</a>
+		</div>
+	
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+      <ul class="navbar-nav ms-auto pb-1">
+        <li class="nav-item">
+          <a class="nav-link" href="#mission-section">Mission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills-section">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#inspiration-section">Inspiration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-section">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <!-- Hero section -->
+  <section id="hero-section">
+    <!-- Start writing your hero section here. -->
+    <div id="profile-img"></div>
+    <h2>Kyle Carmichael</h2>
+		<p>Future Web Developer</p>
+  </section>
+
+  <!-- Mission/Meet-me section -->
+  <section id="mission-section">
+    <!-- Start writing your Mission/Meet-me section here. -->
+		<div class="container pb-3 py-3">
+			<h3 class="text-center py-3">My Mission</h3>
+			<div class="row">
+				<img  class="col-12 col-md-6 pb-3" src="img/coffee-code-sm-unsplash.jpg" alt="Coffee and Laptop on a table">
+				<div class="height-container col-12 col-md-6 d-flex align-items-center ps-3">
+				<p>
+					Hello there! My name is Kyle and I am a programmer. I am committed to lifelong learning and continuous growth of personal skills, academic endeavors, and professional aspirations. My dream is to gain the ability to help people with code and give back to a community that has supported me to become a better person.
+				</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!-- Skills section -->
+  <section id="skills-section">
+    <!-- Start writing your skills section here. -->
+		<div class="container py-3">
+			<div class="row">
+				<h3 class="text-center py-3">Skills</h3>
+				<div class="skill-container col-12 col-md-6 col-lg-3">
+					<img class="skill-img" src="img/html5.png">
+					<p class="text-center py-3">Utilizing HTML5 is advantageous for semantic and accessible coding practices.</p>
+				</div>
+				<div class="skill-container col-12 col-md-6 col-lg-3">
+					<img class="skill-img" src="img/css-3.png">
+					<p class="text-center py-3">CSS3 helps style content to be beautiful while maintaining a cohesive design and remaining accessible.</p>
+				</div>
+				<div class="skill-container col-12 col-md-6 col-lg-3">
+					<img class="skill-img" src="img/bootstrap_icon_512px.png">
+					<p class="text-center py-3">Bootstrap allows the building of responsive web pages and functional mockups quickly and effectively.</p>
+				</div>
+				<div class="skill-container col-12 col-md-6 col-lg-3">
+					<img src="img/javascript_icon_512px.png">
+					<p class="text-center py-3">JavaScript brings sites to life with interactivity and powers CSS animations.</p>
+				</div>
+			</div>
+		</div>
+  </section>
+
+  <!-- Inspiration Section -->
+  <section id="inspiration-section">
+		<div class="container py-3">
+			<h3 class="text-center py-3">My Inspiration</h3>
+			<div class="carousel slide" id="carousel-inspo" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button class="active" type="button" data-bs-target="#carousel-inspo" data-bs-slide-to="0">
+					</button>
+					<button type="button" data-bs-target="#carousel-inspo" data-bs-slide-to="1">
+					</button>
+					<button type="button" data-bs-target="#carousel-inspo" data-bs-slide-to="2">
+					</button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="overlay-container">
+							<div class="overlay"></div>
+							<img src="img/Katya.jpg" alt="Portrait of Katya the World Famous Drag Queen">
+						</div>
+						<div class="carousel-caption">
+							<h5>Do interesting things<br>Solve problems &amp;<br>Be happy.</h5>
+							<p>Katya Zamolodchikova</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay-container">
+							<div class="overlay"></div>
+							<img src="img/gaga-national-anthem.jpg" alt="Laga Gaga singing the national anthem in 2021">
+						</div>
+						<div class="carousel-caption">
+							<h5>Do not allow people to dim your shine because they are blinded. Tell them to put on some sunglasses because we were born this way.</h5>
+							<p>Lady Gaga</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay-container">
+							<div class="overlay"></div>
+							<img src="img/turing.png" alt="Alan Turing Portrait">
+						</div>
+						<div class="carousel-caption">
+							<h5>We can only see a short distance ahead, but we can see plenty there that needs to be done.</h5>
+							<p>Alan Turing</p>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel-inspo" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel-inspo" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-section">
+		<div class="container py-3">
+			<h3 class="text-center pt-3">Contact Me</h3>
+			<div class="row text-center py-5">
+				<a href="https://github.com/kylecarmichael" class="col-12 col-md-4">
+					<i class="bi bi-github"></i></a>
+				<a href="https://www.linkedin.com/in/kyle-carmichael-b98b77191/" class="col-12 col-md-4">
+					<i class="bi bi-linkedin"></i>
+				</a>
+				<a href="mailto:kylemcarmichael1@gmail.com" class="col-12 col-md-4">
+					<i class="bi bi-envelope-fill"></i>
+				</a>
+			</div>
+		</div>
+  </section>
+
+  <!-- Footer section -->
+	<footer class="text-center pt-3">&copy; Kyle Carmichael 2021</footer>
+  <!-- Bootstrap Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
