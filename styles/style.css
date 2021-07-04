@@ -1,0 +1,179 @@
+/* Custom properties for color pallet */
+* {
+  --dark-color: #320A28;
+  --primary-accent-color: #DE6449;
+  --secondary-accent-color: #511730;
+  --light-color: #D6CFCB;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: var(--dark-color);
+  min-height: 5vh;
+  z-index: 100;
+}
+
+.nav-block {
+  height: 5vh;
+  min-height: 5vh;
+  display: block;
+}
+
+.one-edge-shadow {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+/* SIZZLE: Navbar Brand transition and hover for nav links */
+.brand-transition:hover a {
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+ul.navbar-nav li a:hover {
+  color: var(--primary-accent-color) !important;
+}
+
+a.navbar-brand:hover {
+  color: var(--primary-accent-color) !important;
+}
+
+.nav-item a.active {
+  color: var(--light-color) !important;
+}
+
+/* Hero Styles */
+#hero-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 45, 0, 0.274)), to(rgba(45, 22, 0, 0.76))), url(../img/water-purple-orange-unsplash-md.jpg);
+  background: linear-gradient(rgba(134, 45, 0, 0.274), rgba(45, 22, 0, 0.76)), url(../img/water-purple-orange-unsplash-md.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding: clamp(150px, 10vh, 200px) 0;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+#profile-img {
+  margin: clamp(10px, 20vh, 100px) auto;
+  background-image: url(../img/meForBioAvatar.png);
+  background-size: clamp(100px, 20vh, 200px) auto;
+  background-position: center bottom;
+  height: clamp(100px, 20vh, 200px);
+  width: clamp(100px, 20vh, 200px);
+  border: 5px solid var(--primary-accent-color);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+
+#hero-section h2 {
+  text-align: center;
+  color: white;
+  margin: clamp(1rem, 1.5rem, 3rem) auto;
+  font-size: clamp(2rem, 2.5rem, 3rem);
+  text-shadow: 0 0.25rem 0.25rem var(--dark-color);
+}
+
+#hero-section p {
+  color: white;
+  text-align: center;
+  margin: clamp(1rem, 1.5rem, 2rem) auto;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+  text-shadow: 0 0.25rem 0.25rem var(--dark-color);
+}
+
+/* Mission Styles */
+#mission-section {
+  background-color: var(--secondary-accent-color);
+  color: var(--light-color);
+}
+
+#mission-section.height-container {
+  font-size: clamp(200px, 50vw, 400px);
+}
+
+/* Skills Styles */
+#skills-section {
+  background-color: var(--light-color);
+  color: #000;
+}
+
+#skills-section h3 {
+  color: var(--dark-color);
+}
+
+#skills-section p {
+  font-size: 1rem;
+}
+
+.skill-container img {
+  height: clamp(100px, 20vh, 300px);
+  width: clamp(100px, 20vh, 300px);
+  margin: auto;
+  display: block;
+}
+
+.skill-img {
+  -webkit-filter: sepia(40%);
+          filter: sepia(40%);
+}
+
+/* Inspo Styles */
+.carousel-item img {
+  height: 600px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#inspiration-section {
+  background-color: var(--secondary-accent-color);
+  color: var(--light-color);
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  text-shadow: 0 0.15rem 0.2rem var(--dark-color);
+}
+
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+}
+
+/* Contact Styles */
+#contact-section {
+  background-color: var(--light-color);
+}
+
+.bi-github,
+.bi-linkedin,
+.bi-envelope-fill {
+  font-size: clamp(100px, 2rem, 200px);
+}
+
+#contact-section a {
+  color: var(--dark-color);
+}
+
+#contact-section a:hover {
+  color: var(--primary-accent-color);
+}
+
+/* Footer Styles */
+footer {
+  color: white;
+  height: 64px;
+  background-color: var(--dark-color);
+}
+/*# sourceMappingURL=style.css.map */

@@ -27,6 +27,7 @@ nav {
 	box-shadow: 0 8px 6px -6px black;
 }
 
+
 /* SIZZLE: Navbar Brand transition and hover for nav links */
 
 .brand-transition:hover a {
@@ -46,51 +47,52 @@ a.navbar-brand:hover {
 }
 
 
-
 /* Hero Styles */
 #hero-section {
-  background: linear-gradient(rgba(134, 45, 0, 0.274),
-	 rgba(45, 22, 0, 0.76)), url(img/water-purple-orange-unsplash-md.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center bottom;
-  padding: clamp(150px, 10vh, 200px) 0;
-	background-attachment: fixed;
-	min-height: 100vh;
-}
-
+    background: linear-gradient(rgba(134, 45, 0, 0.274),
+       rgba(45, 22, 0, 0.76)), url(../img/water-purple-orange-unsplash-md.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: clamp(150px, 10vh, 200px) 0;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  
 #profile-img {
-  margin: clamp(10px, 20vh, 100px) auto;
-  background-image: url(img/meForBioAvatar.png) ;
-	background-size: clamp(100px, 20vh, 200px) auto;
-	background-position: center bottom;
-  height: clamp(100px, 20vh, 200px);
-  width: clamp(100px, 20vh, 200px);
-	border: 5px solid var(--primary-accent-color);
-	border-radius: 50%;
-	background-repeat: no-repeat;
+    margin: clamp(10px, 20vh, 100px) auto;
+    background-image: url(../img/meForBioAvatar.png) ;
+    background-size: clamp(100px, 20vh, 200px) auto;
+    background-position: center bottom;
+    height: clamp(100px, 20vh, 200px);
+    width: clamp(100px, 20vh, 200px);
+    border: 5px solid var(--primary-accent-color);
+    border-radius: 50%;
+    background-repeat: no-repeat;
 } 
-
+  
 #hero-section h2 {
-	text-align: center;
-  color: white;
-	margin: clamp(1rem, 1.5rem, 3rem) auto;
-	font-size: clamp(2rem, 2.5rem, 3rem);
-	text-shadow: 0 .25rem .25rem var(--dark-color);
+    text-align: center;
+    color: white;
+    margin: clamp(1rem, 1.5rem, 3rem) auto;
+    font-size: clamp(2rem, 2.5rem, 3rem);
+    text-shadow: 0 .25rem .25rem var(--dark-color);
 }
-
+  
 #hero-section p {
-	color: white;
-	text-align: center;
-	margin: clamp(1rem, 1.5rem, 2rem) auto  ;
-	font-size: clamp(1rem, 1.5rem, 2rem);
-	text-shadow: 0 .25rem .25rem var(--dark-color);
+    color: white;
+    text-align: center;
+    margin: clamp(1rem, 1.5rem, 2rem) auto  ;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    text-shadow: 0 .25rem .25rem var(--dark-color);
 }
 
 /* Mission Styles */
 #mission-section {	
 	background-color: var(--secondary-accent-color);
 	color: var(--light-color);
+    //I dont like the font size here but to use clamp here effects the image too :(
+    // font-size: clamp(1rem, 1.5rem, 2rem);
 }
 
 #mission-section.height-container {
@@ -108,10 +110,11 @@ a.navbar-brand:hover {
 }
 
 #skills-section p {
-	font-size: clamp(200px, 50vw, 400px),
+    // This was originally set to clamp but doesn't work correctly in SASS
+    font-size: 1rem;
 }
 
-.skill-container img{
+.skill-container img {
 	height: clamp(100px, 20vh, 300px);
 	width: clamp(100px, 20vh, 300px);
 	margin: auto;
@@ -121,6 +124,7 @@ a.navbar-brand:hover {
 .skill-img {
 	filter: sepia(40%);
 }
+
 
 /* Inspo Styles */
 .carousel-item img {
@@ -173,5 +177,5 @@ a.navbar-brand:hover {
 footer {
 	color: white;
 	height: 64px;
-	background-color: #42103B;
+	background-color: var(--dark-color);
 }
